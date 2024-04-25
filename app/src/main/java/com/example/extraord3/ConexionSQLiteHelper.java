@@ -15,18 +15,16 @@ public class ConexionSQLiteHelper extends SQLiteOpenHelper {
         super(context, name, factory, version);
     }
 
+
     @Override
-    public void onCreate(SQLiteDatabase ExtraOrdinarioBD) {
-        ExtraOrdinarioBD.execSQL(utilidades.CREAR_TABLA_PRODUCTO);
-
-
+    public void onCreate(SQLiteDatabase db) {
+        String query = "CREATE TABLE productos (id INTEGER PRIMARY KEY AUTOINCREMENT, nombre TEXT, precio TEXT, cantidad TEXT, imagen TEXT)";
+        db.execSQL(query);
     }
+
 
     @Override
     public void onUpgrade(SQLiteDatabase ExtraOrdinarioBD, int versionAntigua, int versionNueva) {
-
-        ExtraOrdinarioBD.execSQL("DROP TABLE IF EXISTS PRODUCTOS");
-        onCreate(ExtraOrdinarioBD);
 
     }
 }

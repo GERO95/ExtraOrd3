@@ -7,12 +7,14 @@ public class producto {
     private String nombre;
     private String precio;
     private String cantidad;
+    private String imagen;
 
-    public producto(Integer id, String nombre, String precio, String cantidad) {
+    public producto(Integer id, String nombre, String precio, String cantidad, String imagen) {
         this.id = id;
         this.nombre = nombre;
         this.precio = precio;
         this.cantidad = cantidad;
+        this.imagen = imagen;
     }
 
 
@@ -47,4 +49,13 @@ public class producto {
     public void setCantidad(String cantidad) {
         this.cantidad = cantidad;
     }
+
+    public String getImagen() {
+        return imagen;
+    }
+
+    public void setImagen(String imagen) {
+        this.imagen = imagen;
+    }
+
 }

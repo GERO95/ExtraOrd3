@@ -1,5 +1,7 @@
 package com.example.extraord3;
 
+import static com.example.extraord3.R.id.edtNom;
+
 import android.content.ContentValues;
 import android.content.DialogInterface;
 import android.content.Intent;
@@ -35,7 +37,7 @@ public class ActivityInventario extends AppCompatActivity {
                 AlertDialog.Builder alert = new AlertDialog.Builder(ActivityInventario.this);
                 final View customlayout = getLayoutInflater().inflate(R.layout.insertpdto, null);
                 alert.setCancelable(false);
-                EditText nombreP = customlayout.findViewById(R.id.edtNom);
+                EditText nombreP = customlayout.findViewById(edtNom);
                 EditText precioP = customlayout.findViewById(R.id.edtCost);
                 EditText cantP = customlayout.findViewById(R.id.edtUnit);
                 EditText imgName = customlayout.findViewById(R.id.edtImg);
@@ -68,7 +70,7 @@ public class ActivityInventario extends AppCompatActivity {
                 AlertDialog.Builder alert = new AlertDialog.Builder(ActivityInventario.this);
                 final View customlayout = getLayoutInflater().inflate(R.layout.codepdto, null);
                 alert.setCancelable(false);
-                EditText nombreP = customlayout.findViewById(R.id.edtNom);
+                EditText nombreP = customlayout.findViewById(edtNom);
 
                 alert.setView(customlayout);
                 alert.setPositiveButton("Guardar", new DialogInterface.OnClickListener() {
@@ -97,7 +99,7 @@ public class ActivityInventario extends AppCompatActivity {
                 alert.setCancelable(false);
                 EditText precioP = customlayout.findViewById(R.id.edtCost);
                 EditText cantP = customlayout.findViewById(R.id.edtUnit);
-                EditText nombreP = customlayout.findViewById(R.id.edtNom);
+                EditText nombreP = customlayout.findViewById(edtNom);
 
                 alert.setView(customlayout);
                 alert.setPositiveButton("Guardar", new DialogInterface.OnClickListener() {

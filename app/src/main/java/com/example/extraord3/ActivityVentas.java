@@ -59,7 +59,7 @@ public class ActivityVentas extends AppCompatActivity {
             Cursor cursor = baseDatos.rawQuery("SELECT * FROM productos", null);
             String i="";
             while (cursor.moveToNext()){
-                i+="Nombre :"+cursor.getString(1)+"\nPrecio:"+cursor.getString(2)+"\nCantidad:"+cursor.getString(3)+"\nImagen:"+cursor.getString(4)+"\n \n";
+                i+="nombre:"+cursor.getString(1)+"\nprecio:"+cursor.getString(2)+"\ncantidad:"+cursor.getString(3)+"\nimagen:"+cursor.getString(4)+"\n \n";
             }
 
             cursor.close();
