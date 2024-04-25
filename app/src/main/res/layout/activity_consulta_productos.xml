@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ConsultaProductos">
+
+    <EditText
+        android:id="@+id/campoIdConsulta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="99dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginEnd="102dp"
+        android:layout_marginBottom="22dp"
+        android:ems="10"
+        android:hint="id"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        app:layout_constraintBottom_toTopOf="@+id/campoNombreConsulta"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/campoNombreConsulta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="103dp"
+        android:layout_marginTop="22dp"
+        android:layout_marginEnd="98dp"
+        android:layout_marginBottom="47dp"
+        android:ems="10"
+        android:hint="nombre"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        app:layout_constraintBottom_toTopOf="@+id/campoPrecioConsulta"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/campoIdConsulta" />
+
+    <EditText
+        android:id="@+id/campoPrecioConsulta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="99dp"
+        android:layout_marginEnd="102dp"
+        android:layout_marginBottom="24dp"
+        android:ems="10"
+        android:hint="precio"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        app:layout_constraintBottom_toTopOf="@+id/campoCantidadConsulta"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/campoNombreConsulta" />
+
+    <EditText
+        android:id="@+id/campoCantidadConsulta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="99dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="102dp"
+        android:layout_marginBottom="50dp"
+        android:ems="10"
+        android:hint="cantidad"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        app:layout_constraintBottom_toTopOf="@+id/btnConsultar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/campoPrecioConsulta" />
+
+    <Button
+        android:id="@+id/btnConsultar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="67dp"
+        android:layout_marginTop="87dp"
+        android:layout_marginEnd="242dp"
+        android:layout_marginBottom="100dp"
+        android:onClick="onClick"
+        android:text="CONSULTAR"
+        app:layout_constraintBottom_toTopOf="@+id/btnEliminarConsulta"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/campoCantidadConsulta" />
+
+    <Button
+        android:id="@+id/btnActualizarConsulta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="229dp"
+        android:layout_marginTop="179dp"
+        android:layout_marginEnd="74dp"
+        android:layout_marginBottom="70dp"
+        android:onClick="onClick"
+        android:text="ACTUALIZAR"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/campoCantidadConsulta" />
+
+    <Button
+        android:id="@+id/btnEliminarConsulta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="75dp"
+        android:layout_marginEnd="248dp"
+        android:layout_marginBottom="51dp"
+        android:onClick="onClick"
+        android:text="ELIMINAR"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnConsultar" />
+</android.support.constraint.ConstraintLayout>
