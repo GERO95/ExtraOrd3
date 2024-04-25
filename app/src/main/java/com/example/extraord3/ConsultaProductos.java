@@ -85,7 +85,7 @@ public class ConsultaProductos extends AppCompatActivity {
         try {
 
             Cursor cursor= db.query(utilidades.TABLA_PRODUCTOS,campos,utilidades.CAMPO_ID+"=?",parametros,null,null,null);
-            Cursor.moveToFirst();
+            //Cursor.moveToFirst();    REVISAR QUE MARCA ERROR AQUIIIIII
             campoNombre.setText((cursor.getString(0)));
             campoPrecio.setText((cursor.getString(1)));
             campoCantidad.setText((cursor.getString(2)));

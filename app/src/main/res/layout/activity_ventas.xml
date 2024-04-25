@@ -1,75 +1,46 @@
-<?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<?xml version="1.0" encoding="utf-8"?><RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".ActivityVentas">
 
-    <EditText
-        android:id="@+id/campoId2"
+    <TextView
+        android:layout_marginTop="12dp"
+        android:id="@+id/titleVta"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="100dp"
-        android:layout_marginTop="50dp"
-        android:layout_marginEnd="101dp"
-        android:layout_marginBottom="37dp"
-        android:ems="10"
-        android:hint="ID"
-        android:inputType="textPersonName"
-        android:minHeight="48dp"
-        app:layout_constraintBottom_toTopOf="@+id/campoNombre2"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:layout_centerHorizontal="true"
+        android:text="Registros en BD"
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        android:fontFamily="sans-serif-condensed"
+        />
 
-    <EditText
-        android:id="@+id/campoNombre2"
+    <TextView
+        android:id="@+id/impRows"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="100dp"
-        android:layout_marginEnd="101dp"
-        android:layout_marginBottom="30dp"
-        android:ems="10"
-        android:hint="NOMBRE"
-        android:inputType="textPersonName"
-        android:minHeight="48dp"
-        app:layout_constraintBottom_toTopOf="@+id/campoPrecio2"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/campoId2" />
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:layout_below="@id/titleVta"
+        android:text="Vacío"/>
 
-    <EditText
-        android:id="@+id/campoPrecio2"
+    <Button
+        android:id="@+id/btQuery"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="100dp"
-        android:layout_marginTop="137dp"
-        android:layout_marginEnd="101dp"
-        android:layout_marginBottom="30dp"
-        android:ems="10"
-        android:hint="PRECIO"
-        android:inputType="textPersonName"
-        android:minHeight="48dp"
-        app:layout_constraintBottom_toTopOf="@+id/campoCantidad2"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/campoId2" />
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/impRows"
+        android:layout_marginTop="10dp"
+        android:text="Consultar BD"/>
 
-    <EditText
-        android:id="@+id/campoCantidad2"
+    <Button
+        android:id="@+id/returnBt2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="100dp"
-        android:layout_marginEnd="101dp"
-        android:layout_marginBottom="303dp"
-        android:ems="10"
-        android:hint="CANTIDAD"
-        android:inputType="textPersonName"
-        android:minHeight="48dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/campoPrecio2" />
+        android:layout_below="@id/btQuery"
+        android:layout_centerHorizontal="true"
+        android:text="Regresar al Menú Principal"/>
 
-</android.support.constraint.ConstraintLayout>
+</RelativeLayout>

@@ -1,106 +1,47 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="#FFEB3B"
     tools:context=".ActivityInventario">
 
-    <Button
-        android:id="@+id/btnInsertar"
+    <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="100dp"
-        android:layout_marginTop="300dp"
-        android:layout_marginEnd="88dp"
-        android:onClick="onClick"
-        android:text="Insertar producto"
-        app:layout_constraintBottom_toTopOf="@+id/btnEliminar"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:text="Inventario"
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        android:fontFamily="sans-serif-condensed"
+        />
 
     <Button
-        android:id="@+id/btnEliminar"
+        android:id="@+id/btInsert"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="100dp"
-        android:layout_marginTop="2dp"
-        android:layout_marginEnd="85dp"
-        android:layout_marginBottom="50dp"
-        android:onClick="ActConsulta"
-        android:text="CONSULTAR PRODUCTOS"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnInsertar" />
+        android:text="Añadir Producto"/>
 
-    <EditText
-        android:id="@+id/campoId"
+    <Button
+        android:id="@+id/btDelete"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="97dp"
-        android:layout_marginTop="30dp"
-        android:layout_marginEnd="104dp"
+        android:text="Eliminar Producto"/>
 
-        android:ems="10"
-        android:hint="ID"
-        android:inputType="textPersonName"
-        android:minHeight="48dp"
-        app:layout_constraintBottom_toTopOf="@+id/campoNombre"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <EditText
-        android:id="@+id/campoNombre"
+    <Button
+        android:id="@+id/btUpdate"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="98dp"
-        android:layout_marginTop="10dp"
-        android:layout_marginEnd="103dp"
-        android:layout_marginBottom="10dp"
+        android:text="Actualizar Producto"/>
 
-        android:ems="10"
-        android:hint="NOMBRE"
-        android:inputType="textPersonName"
-        android:minHeight="48dp"
-        app:layout_constraintBottom_toTopOf="@+id/campoPrecio"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/campoId" />
-
-    <EditText
-        android:id="@+id/campoPrecio"
+    <Button
+        android:id="@+id/returnBt"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="99dp"
-        android:layout_marginEnd="102dp"
-        android:layout_marginBottom="10dp"
+        android:text="Regresar al Menú Principal"/>
 
-        android:ems="10"
-        android:hint="PRECIO"
-        android:inputType="textPersonName"
-        android:minHeight="48dp"
-        app:layout_constraintBottom_toTopOf="@+id/campoCantidad"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/campoNombre" />
 
-    <EditText
-        android:id="@+id/campoCantidad"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="99dp"
-        android:layout_marginEnd="102dp"
-        android:layout_marginBottom="137dp"
 
-        android:ems="10"
-        android:hint="CANTIDAD"
-        android:inputType="textPersonName"
-        android:minHeight="48dp"
-        app:layout_constraintBottom_toTopOf="@+id/btnInsertar"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/campoPrecio" />
-</android.support.constraint.ConstraintLayout>
+</LinearLayout>
