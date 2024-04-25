@@ -19,44 +19,44 @@
         android:id="@+id/edtId"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_below="@id/textID"
         android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
         android:hint="ID Producto"
         android:inputType="text"
-        android:layout_marginTop="5dp"
-        android:layout_below="@id/textID"
-        />
+        android:minHeight="48dp" />
 
     <EditText
         android:id="@+id/edtNom"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_below="@id/edtId"
         android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
         android:hint="Ingresa el nombre del Producto"
         android:inputType="text"
-        android:layout_marginTop="5dp"
-        android:layout_below="@id/edtId"
-        />
+        android:minHeight="48dp" />
 
     <EditText
         android:id="@+id/edtCost"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:hint="Precio"
-        android:layout_marginTop="7dp"
         android:layout_below="@id/edtNom"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="7dp"
+        android:hint="Precio"
         android:inputType="number"
-        />
+        android:minHeight="48dp" />
 
     <EditText
         android:id="@+id/edtUnit"
-        android:inputType="number"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
         android:layout_below="@id/edtCost"
-        android:hint="Cantidad (Unidades)"
+        android:layout_centerHorizontal="true"
         android:layout_marginTop="7dp"
-        />
+        android:hint="Cantidad (Unidades)"
+        android:inputType="number"
+        android:minHeight="48dp" />
 
 </RelativeLayout>

@@ -36,7 +36,7 @@ public class MainActivity extends AppCompatActivity {
     public void onClick(View view){
         Intent ActInsertar=null;
         switch (view.getId()){
-            case R.id.btnInsertar:
+            case R.id.btInsert:
                 ActInsertar=new Intent(MainActivity.this,ActivityInventario.class);
                 break;
         }
